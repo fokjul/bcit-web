@@ -1,0 +1,10 @@
+@use '../../../styles/partials/' as p;
+
+.schedule-info {
+    display: flex;
+    gap: p.$size-xxs;
+
+    &__icon {
+        width: p.$size-s + p.$size-xxs;
+    }
+}

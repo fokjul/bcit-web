@@ -1,0 +1,26 @@
+@use '../../styles/partials/' as p;
+
+.crn-section {
+    max-width: p.px-to-rem(939);
+    padding-inline: p.$size-s;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__crn-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__crn {
+        display: flex;
+    }
+
+    &__schedule {
+        display: grid;
+    
+    }
+}
