@@ -1,12 +1,29 @@
 @use '../../styles/partials/' as p;
 
 .crn-section {
-    max-width: p.px-to-rem(939);
-    padding-inline: p.$size-s;
+    display: flex;
+    flex-direction: column;
+    gap: p.$size-s;
+    width: 100%;
+    padding: p.$size-s;
+    background-color: p.$primaryColor--white;
+    margin-inline: auto;
+
+    @include p.breakpoint(tablet) {
+        gap: p.$size-l;
+    }
+
 
     &__header {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: p.$size-xs;
+
+        @include p.breakpoint(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     &__crn-container {
@@ -17,10 +34,99 @@
 
     &__crn {
         display: flex;
+        align-items: center;
+        gap: p.$size-xs;
+        
+
+        &-header {
+            font-size: p.$font-m;
+
+            @include p.breakpoint(tablet) {
+                font-size: p.$font-l;
+            }
+        }
+    }
+
+    &__caption {
+        font-size: p.px-to-rem(14);
+    }
+
+    &__cost {
+        display: flex;
+        flex-direction: column;
+
+        @include p.breakpoint(tablet) {
+            align-items: flex-end;
+        }
     }
 
     &__schedule {
         display: grid;
-    
+        grid-template-columns: 1fr;
+
+
+        @include p.breakpoint(tablet) {
+            grid-template-columns: 1fr auto;
+            row-gap: p.$size-xs;
+        }
     }
+
+    &__status {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include p.breakpoint(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__status--available {
+        display: flex;
+        flex-direction: column;
+        row-gap: p.$size-xs;
+
+    }
+}
+
+.offering-details {
+    display: flex;
+    flex-direction: column;
+    gap: p.$size-m;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: p.$size-s;
+
+        @include p.breakpoint(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__hide-btn-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__heading {
+        color: p.$secondaryColor--fontGrey;
+    }
+
+    &__info {
+        padding-top: p.$size-m;
+        border-top: 1px solid p.$border-global-grey
+    }
+
+    &__subscribe {
+        margin-left: p.$size-s;
+        color: p.$secondaryColor--fontLightGrey;
+    }
+}
+
+.hidden {
+    display: none;
 }

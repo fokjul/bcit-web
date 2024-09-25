@@ -1,0 +1,11 @@
+@use '../../styles/partials/' as p;
+
+.offering-list {
+    display: flex;
+    flex-direction: column;
+    padding: p.$size-s;
+    background-color: p.$border-global-grey;
+    gap: p.$size-l;
+    max-width: p.px-to-rem(939);
+    margin-inline: auto;
+}

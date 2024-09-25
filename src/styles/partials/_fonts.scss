@@ -14,15 +14,17 @@
       $font-reg: 400;
   
   // Font Size
-      $font-xl: f.px-to-rem(40);
-      $font-l: f.px-to-rem(32);
+      $font-xxl: f.px-to-rem(54);
+      $font-xl: f.px-to-rem(32);
+      $font-l: f.px-to-rem(28);
       $font-m: f.px-to-rem(24);
       $font-s: f.px-to-rem(16); 
       $font-xs: f.px-to-rem(13);
       //$font-xxs: f.px-to-rem(10);
       
   // Line Height 
-      $lineH-l: f.px-to-rem(44);
+      $lineH-xl: f.px-to-rem(54);
+      $lineH-l: f.px-to-rem(40);
       $lineH-m: f.px-to-rem(32);
       $lineH-s: f.px-to-rem(22);
       $lineH-xs: f.px-to-rem(20);
@@ -33,9 +35,27 @@ h1, h2, h3, h4, h5 {
 }
   
   h1 {
-      font-size: $font-l;
-      line-height: $lineH-l;
+      font-size: $font-xxl;
+      line-height: $lineH-xl;
       font-weight: $font-demi;
+  }
+
+  h2 {
+    font-size: $font-xl;
+    line-height: $lineH-l;
+    font-weight: $font-demi;
+  }
+
+  h3 {
+    font-size: $font-xl;
+    line-height: $lineH-l;
+    font-weight: $font-demi;
+  }
+
+  h4 {
+    font-size: $font-l;
+    line-height: $lineH-m;
+    font-weight: $font-demi;
   }
 
 
@@ -51,11 +71,11 @@ h1, h2, h3, h4, h5 {
     font-weight: $font-reg;
   }
   
-//   .labels-buttons {
-//       font-size: clamp($font-xxs, 5vw, $font-xs);
-//       line-height: $lineH-xs;
-//       font-weight: $font-bold;
-//   }
+  .labels-buttons {
+      font-size: $font-xs;
+      line-height: $lineH-xs;
+      font-weight: $font-bold;
+  }
 
 //   @mixin label {
 //     @extend .labels-buttons;

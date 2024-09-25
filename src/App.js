@@ -1,10 +1,10 @@
 import './App.scss';
-import CourseOffering from './components/CourseOffering/CourseOffering';
+import CourseOfferingList from './components/CourseOfferingList/CourseOfferingList';
 
 function App() {
   return (
     <div className="App">
-      <CourseOffering />
+      <CourseOfferingList />
     </div>
   );
 }
