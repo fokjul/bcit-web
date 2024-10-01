@@ -88,6 +88,11 @@
         flex-direction: column;
         row-gap: p.$size-xs;
 
+        @include p.breakpoint(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }
 
