@@ -1,0 +1,13 @@
+@use '../../../styles/partials/' as p;
+
+.text-link {
+    border: none;
+    background: none;
+    border-bottom: 2px solid p.$secondaryColor--yellow;
+    cursor: pointer;
+    width: fit-content;
+    color: p.$primaryColor--blue;
+    padding-inline: 0;
+    font-family: p.$fontBody;
+    @extend .body-copy;
+}

@@ -1,0 +1,26 @@
+@use '../../../styles/partials/' as p;
+
+.schedule-info {
+    display: flex;
+    gap: p.$size-xxs;
+    padding-block: p.$size-xs;
+    align-items: start;
+
+    &:nth-child(even) {
+        border-bottom: 1px solid p.$border-global-grey;
+        margin-bottom: p.$size-s;
+    }
+
+    @include p.breakpoint(tablet) {
+        border-bottom: 1px solid p.$border-global-grey;
+        align-items: center;
+        
+        &:nth-child(even) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__icon {
+        width: p.$size-s + p.$size-xxs;
+    }
+}

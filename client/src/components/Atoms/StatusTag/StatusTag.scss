@@ -1,0 +1,40 @@
+@use '../../../styles/partials/' as p;
+
+
+.statusTag {
+    display: flex;
+    flex-shrink: 0;
+    border-radius: p.$size-xxs;
+    padding: p.$size-xxs;
+    height: fit-content;
+    width: fit-content;
+
+    &--available {
+        background-color: rgba(0, 159, 61, 0.1);
+    }
+
+    &--full {
+        background-color: rgba(204, 0, 0, 0.1);
+    }
+
+    &--inProgress {
+        background-color: rgba(255, 166, 10, 0.1);
+    }
+
+    &-text {
+        text-transform: uppercase;
+        @extend .labels-buttons;
+
+        &--available {
+            color: p.$success-color
+        }
+
+        &--full {
+            color: p.$error-color
+        }
+
+        &--inProgress {
+            color: p.$warning-color
+        }
+    }
+}
