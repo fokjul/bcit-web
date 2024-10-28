@@ -1,18 +1,35 @@
 @use './styles/partials/' as p;
 
-.contentContainer {
+.app {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-inline: p.$size-s;
+}
 
+.contentArea {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-block: p.px-to-rem(38);
+    
     @include p.breakpoint(tablet) {
-        margin-inline: p.$size-l;
+        @include p.container-layout;
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 0;
     }
 
-    @include p.breakpoint(desktop) {
-        flex-direction: row;
-        max-width: p.px-to-rem(1200);
-        margin-inline: auto;
+    
+    &__main {
+        padding-bottom: p.px-to-rem(38);
+        border-bottom: 1px solid p.$border-global-grey;
+        padding-inline: p.$size-s;
+        width: 100%;
+
+        @include p.breakpoint(tablet) {
+            padding-block: p.$size-3xl;
+            padding-left: p.$size-xl;
+            border-bottom: none;
+        }
     }
 }
+

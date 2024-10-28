@@ -4,8 +4,7 @@
 // SASS map to store breakpoint values. Ref --> https://sass-lang.com/documentation/values/maps/
     $breakpoints: (
         "desktop": f.px-to-rem(1280), 
-        // "tablet": f.px-to-rem(768),
-        "tablet": f.px-to-rem(599),
+        "tablet": f.px-to-rem(959),
         "mobile": f.px-to-rem(320)
     );   
 

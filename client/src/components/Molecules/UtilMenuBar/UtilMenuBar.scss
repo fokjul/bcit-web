@@ -1,18 +1,16 @@
 @use '../../../styles/partials/' as p;
 
-.navbar {
-    display: hidden;
+.navbar-util {
+    display: none;
     
     @include p.breakpoint(tablet) {
+        display: block;
         background-color: p.$primaryColor--darkBlue;
     
     &__container {
-        display: flex;
+        @include p.container-layout;
         justify-content: flex-end;
-        max-width: p.px-to-rem(1400);
-        border-inline: 1px solid p.$border-global-grey;
-        margin: auto;
-        padding-inline: p.$size-m;
+        border-bottom: none;
     }
 
     &__menu {

@@ -7,10 +7,11 @@
   /* Font Family */
     $fontHeadings: "DM Sans", "Arial", sans-serif;
     $fontBody: "Nunito Sans", "Arial", sans-serif;
+    $fontLabels: "Geo", "Arial", sans-serif;
 
   /* Font weight */
-      $font-bold: 700;
-      $font-demi: 600;
+      $font-bold: 600;
+      $font-demi: 500;
       $font-reg: 400;
   
   /* Font Size */
@@ -18,8 +19,9 @@
       $font-xl: f.px-to-rem(32);
       $font-l: f.px-to-rem(28);
       $font-m: f.px-to-rem(24);
-      $font-s: f.px-to-rem(16); 
-      $font-xs: f.px-to-rem(13);
+      $font-s: f.px-to-rem(18);
+      $font-xs: f.px-to-rem(14);
+      $font-xxs: f.px-to-rem(13);
       //$font-xxs: f.px-to-rem(10);
       
   /* Line Height  */
@@ -70,18 +72,25 @@ h1, h2, h3, h4, h5 {
     line-height: $lineH-xs;
     font-weight: $font-reg;
   }
+
+  .menu-item {
+    font-size: $font-xs;
+    line-height: $lineH-m;
+    font-weight: $font-bold;
+  }
   
   .labels-buttons {
-      font-size: $font-xs;
+      font-size: $font-xxs;
       line-height: $lineH-xs;
       font-weight: $font-bold;
   }
 
   @mixin label {
     @extend .labels-buttons;
+    font-size: $font-s;
     text-transform: uppercase;
-    color: c.$primaryColor--silver;
-    font-weight: $font-demi;    
+    color: c.$secondaryColor--fontGrey;
+    font-weight: $font-demi;   
   }
 
   @mixin utilNavItem {
