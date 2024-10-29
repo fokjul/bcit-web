@@ -1,9 +1,10 @@
 import React from 'react';
 import './AccordionRow.scss';
-import { arrowDownBlue, arrowDown } from '../../../assets/icons';
+import { arrowDownBlue} from '../../../assets/icons';
 import { useState } from 'react';
+import AccordionDescr from '../AccourdionDescription/AccordionDescr';
 
-const AccordionRow = ({title, descr}) => {
+const AccordionRow = ({title, courseDetails}) => {
     const [isRowClicked, setIsRowClicked] = useState(false)
 
     const handleRowClick = () => {
@@ -21,7 +22,11 @@ const AccordionRow = ({title, descr}) => {
             
         </div>
         <div className={ isRowClicked ? 'accordionRow__text' : 'hidden'}>
-            {descr}
+            <AccordionDescr 
+                title={title}
+                courseDetails={courseDetails}
+
+            />
         </div>
         
     </div>

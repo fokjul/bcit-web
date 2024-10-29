@@ -1,24 +1,24 @@
 import React from 'react';
-import './Accordion.scss';
+import './AccordionList.scss';
 import AccordionRow from '../../Atoms/AccordionRow/AccordionRow';
 
-const Accordion = () => {
+const AccordionList = ({courseDetails=''}) => {
   return (
     <div className='accordion'>
       <AccordionRow 
         title='Course Overview'
-        descr='hello'
+        courseDetails={courseDetails}
       />
       <AccordionRow 
         title='Learning Outcomes'
-        descr='hello'
+        courseDetails={courseDetails}
       />
       <AccordionRow 
         title='Related Programs'
-        descr='hello'
+        courseDetails={courseDetails}
       />
     </div>
   )
 }
 
-export default Accordion
+export default AccordionList

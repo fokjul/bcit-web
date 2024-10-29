@@ -1,0 +1,41 @@
+@use '../../../styles/partials/' as p;
+
+.descr {
+    display: flex;
+    flex-direction: column;
+    gap: p.$size-m;
+
+    ul {
+        margin: 0;
+    }
+
+    small {
+        font-style: italic;
+    }
+
+    &__text {
+        @extend .body-copy;
+    } 
+
+    &__title {
+        color: p.$secondaryColor--fontGrey;
+        margin-bottom: p.$size-s;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: p.$size-m;
+
+        @include p.breakpoint(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+
+        &--fee {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

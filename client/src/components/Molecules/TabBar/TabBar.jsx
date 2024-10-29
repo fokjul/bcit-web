@@ -1,18 +1,19 @@
 import React from 'react';
 import './TabBar.scss';
 
-const TabBar = ({tabOne, tabTwo, tabClicked, setTabClicked}) => {
+const TabBar = ({tabClicked, setTabClicked, terms}) => {
 
-    const handleTabClick = (e) => {
-        setTabClicked({
-            id: e.target.id,
-            isClicked: true
-        })
-    }
+const handleTabClick = (e) => {
+    setTabClicked({
+        id: e.target.id,
+        isClicked: true
+    })
+}
   return (
     <ul className='tabBar'>
-        <li id={tabOne} className={`tabBar__btn ${tabClicked.id === tabOne ? 'selected' : ''}`} onClick={handleTabClick}>{tabOne} </li>
-        <li id={tabTwo} className={`tabBar__btn ${tabClicked.id === tabTwo ? 'selected' : ''}`} onClick={handleTabClick}>{tabTwo}</li>
+        {terms?.map((term, index) => {
+            return <li id={term} key={index} className={`tabBar__btn ${tabClicked.id === term ? 'selected' : ''}`} onClick={handleTabClick}>{term} </li>
+        })}
     </ul>
   )
 }

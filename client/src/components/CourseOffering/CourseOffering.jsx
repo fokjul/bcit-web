@@ -7,24 +7,36 @@ import StatusTag from '../Atoms/StatusTag/StatusTag';
 import TextLink from '../Atoms/TextLink/TextLink';
 import ButtonPrimary from '../Atoms/Buttons/ButtonPrimary/ButtonPrimary';
 
-const CourseOffering = ({status, text}) => {
+const CourseOffering = ({offeringDetails}) => {
   const [isLinkClicked, setIsLinkClicked] = useState(false)
+  console.log(offeringDetails)
   return (
     <div className='crn-section'>
       <div className='crn-section__header'>
-          <div className='crn-section__crn-container'>
+          <div className='crn-section__header-container'>
+            <div className='crn-section__crn-container'>
+              <div className='crn-section__crn'>
+                  <h4 className='crn-section__crn-header'>{offeringDetails.dates}</h4>
+              </div>
             <div className='crn-section__crn'>
-              <h4 className='crn-section__crn-header'>CRN 47008</h4>
+              <div className='crn-section__caption'>
+              <span className='crn-section__caption-label'>CRN</span>
+              <span className='crn-section__caption-value'>{offeringDetails.crn}</span>
+              </div>
               <ButtonTetriary 
                 handleClick={()=> (console.log('btn clicked'))}
               />
             </div>
-            <span className='crn-section__caption'>6 weeks</span>
-          </div>
-          <div className='crn-section__cost'>
-              <h4 className='crn-section__crn-header'>$599.00</h4>
-              <span className='crn-section__caption'>Domestic fee</span>
             </div>
+            <StatusTag 
+              status={offeringDetails.status}
+            />
+          </div>
+
+          <div className='crn-section__cost'>
+              <h4 className='crn-section__crn-header'>{`$${offeringDetails.domestic_fee}`}</h4>
+              <span className='crn-section__caption'>Domestic fee</span>
+          </div>
       </div>
       <div className='crn-section__schedule'>
        <ScheduleInfo 
@@ -51,21 +63,18 @@ const CourseOffering = ({status, text}) => {
       <div className={isLinkClicked ? 'offering-details__container' : 'hidden'}>
           <div className='offering-details__instructor'>
             <h5 className='offering-details__heading'>Instructor</h5>
-            <p>Jeff Parker</p>
+            <p>{offeringDetails.instructor}</p>
           </div>
           <div className='offering-details__outline'>
             <h5 className='offering-details__heading'>Course outline</h5>
             <p>Course outline TBD — see Learning Outcomes in the interim.</p>
           </div>
         </div>
-      <div className={isLinkClicked && status === 'available' ? 'crn-section__status--available' : 'crn-section__status' }>
-        <StatusTag 
-          text={text}
-          status={status}
-        />
+      <div className={isLinkClicked && offeringDetails.status === 'Available' ? 'crn-section__status--available' : 'crn-section__status' }>
+        <div></div>
         {
           isLinkClicked 
-          ? (status === 'available' 
+          ? (offeringDetails.status === 'Available' 
               ? <ButtonPrimary handleClick={()=> (console.log('button clicked'))}/> 
               : <p className='offering-details__subscribe'>This course is full. Please check this page for other currently available offerings, subscribe to receive email updates or contact us with your comments or questions.</p>)
           : <TextLink 

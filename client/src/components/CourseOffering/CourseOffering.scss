@@ -24,6 +24,13 @@
             flex-direction: row;
             justify-content: space-between;
         }
+
+        &-container {
+            display: flex;
+            gap: p.$size-xs;
+        }
+
+    
     }
 
     &__crn-container {
@@ -49,6 +56,12 @@
 
     &__caption {
         font-size: p.px-to-rem(14);
+        display: flex;
+        gap: p.px-to-rem(2);
+
+        &-value {
+            font-weight: bold;
+        }
     }
 
     &__cost {
