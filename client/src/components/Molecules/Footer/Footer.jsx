@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='footer__contact'>
                 <div className='footer__contact-link'>
                     <span className='footer__contact-header'>Contact</span>
-                    <div>
+                    <div className='footer__contact-address'>
                         <span>3700 Willingdon Ave.</span>
                         <span>Burnaby, British Columbia</span>
                         <span>Canada V5G 3H2</span>

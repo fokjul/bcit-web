@@ -5,6 +5,7 @@
     flex-direction: column;
     padding-inline: p.$size-s;
     gap: p.$size-s;
+    padding-top: p.$size-l;
 
 
     @include p.breakpoint(tablet) {

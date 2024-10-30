@@ -3,25 +3,32 @@
 .footer {
     &__container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        padding-inline: p.$size-s;
+        padding-top: p.px-to-rem(65);
+        padding-bottom: p.px-to-rem(50);
 
         @include p.breakpoint(tablet) {
             @include p.container-layout;
             flex-direction: row;
             align-items: flex-start;
+            padding-block: 0;
         }
     }
 
     &__contact {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid p.$border-global-grey;
+        padding-block: p.$size-m;
+        gap: p.$size-m;
 
         @include p.breakpoint(tablet) {
-            display: flex;
-            flex-direction: column;
-            gap: p.$size-m;
             border-right: 1px solid p.$border-global-grey;
             padding-right: p.$size-l;
-            padding-block: p.$size-xl;
             width: 25%;
+            border-top: none;
+            padding-block: p.$size-xl;
         }
 
         &-link {
@@ -48,6 +55,11 @@
             }
         }
 
+        &-address {
+            display: flex;
+            flex-direction: column;
+        }
+
         &-img {
             display: flex;
             gap: p.$size-s;
@@ -60,11 +72,12 @@
     }
 
     &__link-container {
-        display: flex;
-        flex-direction: column;
-        gap: p.$size-xxs;
+        display: none;
 
         @include p.breakpoint(tablet) {
+            display: flex;
+            flex-direction: column;
+            gap: p.$size-xxs;
             border-right: 1px solid p.$border-global-grey;
             padding-inline: p.$size-l;
             padding-block: p.$size-xl;
@@ -77,10 +90,13 @@
         display: flex;
         flex-direction: column;
         gap: p.$size-m;
+        border-top: 1px solid p.$border-global-grey;
+        padding-block: p.$size-m;
 
         @include p.breakpoint(tablet) {
             padding-inline: p.$size-l;
             padding-block: p.$size-xl;
+            border-top: none;
         }
 
         &-campuses {
