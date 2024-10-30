@@ -14,7 +14,6 @@ const BreadcrumbBar = () => {
                 <li className='breadcrumbs-item'>comp 1516</li>
             </ul>
             <ul className='breadcrumbs--mobile'>
-                <li className='breadcrumbs-item'>stu...</li>
                 <li className='breadcrumbs-item'>flex...</li>
                 <li className='breadcrumbs-item'>com...</li>
                 <li className='breadcrumbs-item'>comp 1516</li>
