@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bcit-web/static/css/main.6c1c9319.css",
-    "main.js": "/bcit-web/static/js/main.5c40cb84.js",
+    "main.css": "/bcit-web/static/css/main.b8a22641.css",
+    "main.js": "/bcit-web/static/js/main.41ed9de7.js",
     "static/media/fa-solid-900.ttf": "/bcit-web/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-brands-400.ttf": "/bcit-web/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/fa-solid-900.woff2": "/bcit-web/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
@@ -18,19 +18,22 @@
     "static/media/email.svg": "/bcit-web/static/media/email.1ad78f803f144a065e5ba572b584da26.svg",
     "static/media/hamMenu.svg": "/bcit-web/static/media/hamMenu.3222c078bef703ebc1ea689861fee277.svg",
     "index.html": "/bcit-web/index.html",
+    "static/media/linkedin.svg": "/bcit-web/static/media/linkedin.605b803a07324189ccb6ab97bd285301.svg",
     "static/media/stop.svg": "/bcit-web/static/media/stop.e9e43ab5a03a100672142dfb09739249.svg",
     "static/media/info.svg": "/bcit-web/static/media/info.0f52ddb6e89b78c267b81c9860b35a1f.svg",
     "static/media/search.svg": "/bcit-web/static/media/search.b3e3dedfd16aef24780437ae062fbf6e.svg",
     "static/media/check.svg": "/bcit-web/static/media/check.8e87e0d4bf0f81afd775c670e849723f.svg",
+    "static/media/facebook.svg": "/bcit-web/static/media/facebook.2776ab337e436ad86c82cc438d4a1e93.svg",
     "static/media/arrow-down.svg": "/bcit-web/static/media/arrow-down.24be143b04ced9a535138a4d02b3587f.svg",
     "static/media/arrow-downBlue.svg": "/bcit-web/static/media/arrow-downBlue.8cf6d2092f5cc3da5f6dc8c7ced83e7a.svg",
+    "static/media/twitter.svg": "/bcit-web/static/media/twitter.9cf2331492128b0863cb4bfb6edf378b.svg",
     "static/media/arrow-forwardBlue.svg": "/bcit-web/static/media/arrow-forwardBlue.aa9998d8e0aec5c60360fcc41aa54931.svg",
     "static/media/arrow-forward.svg": "/bcit-web/static/media/arrow-forward.1005fceff38ec931c4be06637d58f7b3.svg",
-    "main.6c1c9319.css.map": "/bcit-web/static/css/main.6c1c9319.css.map",
-    "main.5c40cb84.js.map": "/bcit-web/static/js/main.5c40cb84.js.map"
+    "main.b8a22641.css.map": "/bcit-web/static/css/main.b8a22641.css.map",
+    "main.41ed9de7.js.map": "/bcit-web/static/js/main.41ed9de7.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c1c9319.css",
-    "static/js/main.5c40cb84.js"
+    "static/css/main.b8a22641.css",
+    "static/js/main.41ed9de7.js"
   ]
 }
