@@ -10,7 +10,7 @@
     margin-inline: auto;
 
     @include p.breakpoint(tablet) {
-        gap: p.$size-l;
+        gap: p.$size-m;
     }
 
 
@@ -37,6 +37,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: p.$size-xxs;
     }
 
     &__crn {
@@ -67,6 +68,7 @@
     &__cost {
         display: flex;
         flex-direction: column;
+        gap: p.$size-xxs;
 
         @include p.breakpoint(tablet) {
             align-items: flex-end;
@@ -86,12 +88,12 @@
 
     &__status {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
 
         @include p.breakpoint(tablet) {
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
         }
     }
@@ -140,8 +142,15 @@
     }
 
     &__subscribe {
-        margin-left: p.$size-s;
+        display: flex;
+        flex-wrap: wrap;
         color: p.$secondaryColor--fontLightGrey;
+        @extend .body-copy;
+        column-gap: p.$size-xxs;
+        
+        span > p {
+            display: inline-block
+        }
     }
 }
 

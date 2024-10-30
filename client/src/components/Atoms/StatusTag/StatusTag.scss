@@ -1,6 +1,5 @@
 @use '../../../styles/partials/' as p;
 
-
 .statusTag {
     display: flex;
     flex-shrink: 0;
@@ -38,3 +37,38 @@
         }
     }
 }
+
+// .statusTag {
+//     display: flex;
+//     align-items: center;
+//     gap: p.$size-xs;
+//     flex-shrink: 0;
+//     border-radius: p.$size-xxs;
+//     padding: p.$size-xxs;
+//     height: fit-content;
+//     width: fit-content;
+
+//     &-text {
+//         @extend .body-copy;
+
+//         &--available {
+//             color: p.$success-color
+//         }
+
+//         &--full {
+//             color: p.$error-color
+//         }
+
+//         &--inProgress {
+//             color: p.$warning-color
+//         }
+//     }
+
+//     &__img-container {
+//         width: p.$size-m;
+
+//         img {
+//             width: 100%;
+//         }
+//     }
+// }

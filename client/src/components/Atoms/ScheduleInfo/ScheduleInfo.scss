@@ -1,26 +1,51 @@
 @use '../../../styles/partials/' as p;
 
-.schedule-info {
-    display: flex;
-    gap: p.$size-xxs;
-    padding-block: p.$size-xs;
-    align-items: start;
+// .schedule-info {
+//     display: flex;
+//     gap: p.$size-xxs;
+//     padding-block: p.$size-xs;
+//     align-items: start;
 
-    &:nth-child(even) {
-        border-bottom: 1px solid p.$border-global-grey;
-        margin-bottom: p.$size-s;
-    }
+//     &:nth-child(even) {
+//         border-bottom: 1px solid p.$border-global-grey;
+//         margin-bottom: p.$size-s;
+//     }
 
-    @include p.breakpoint(tablet) {
-        border-bottom: 1px solid p.$border-global-grey;
-        align-items: center;
+//     @include p.breakpoint(tablet) {
+//         border-bottom: 1px solid p.$border-global-grey;
+//         align-items: center;
         
-        &:nth-child(even) {
-            margin-bottom: 0;
+//         &:nth-child(even) {
+//             margin-bottom: 0;
+//         }
+//     }
+// }
+
+.meetingMetrics {
+    display: flex;
+    flex-direction: column;
+    gap: p.$size-s;
+
+    &__header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        border-bottom: 1px solid p.$border-dark-grey;
+        width: 100%;
+
+        &-cell {
+            font-weight: 700;
+            background-color: p.$background-grey;
+            padding-block: p.$size-xs;
         }
     }
 
-    &__icon {
-        width: p.$size-s + p.$size-xxs;
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        border-bottom: 1px solid p.$border-dark-grey;
+        padding-block: p.$size-xxs;
+        width: 100%;
+
     }
+    
 }

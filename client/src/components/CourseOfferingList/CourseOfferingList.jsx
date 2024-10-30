@@ -10,8 +10,6 @@ const CourseOfferingList = ({courseDetails}) => {
   const [currentOfferings, setCurrentOfferings] = useState([]);
   const offeringDetails = courseDetails.offerings;
 
-  console.log(courseDetails.crn)
-
   useEffect(() => {
     if (termArray.length > 0 && !tabClicked.id) {
       setTabClicked({ id: termArray[0], isClicked: true });

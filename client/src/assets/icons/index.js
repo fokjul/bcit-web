@@ -10,6 +10,9 @@ import arrowForward from './arrow-forward.svg'
 import arrowForwardBlue from './arrow-forwardBlue.svg';
 import arrowDownBlue from './arrow-downBlue.svg';
 import arrowDown from './arrow-down.svg';
+import check from './check.svg';
+import stop from './stop.svg';
+import info from './info.svg'
 
 export {
     calendar,
@@ -23,5 +26,8 @@ export {
     arrowForward,
     arrowForwardBlue,
     arrowDownBlue,
-    arrowDown
+    arrowDown,
+    check,
+    stop,
+    info
 }

@@ -9,7 +9,7 @@ import ButtonPrimary from '../Atoms/Buttons/ButtonPrimary/ButtonPrimary';
 
 const CourseOffering = ({offeringDetails}) => {
   const [isLinkClicked, setIsLinkClicked] = useState(false)
-  console.log(offeringDetails)
+
   return (
     <div className='crn-section'>
       <div className='crn-section__header'>
@@ -40,24 +40,7 @@ const CourseOffering = ({offeringDetails}) => {
       </div>
       <div className='crn-section__schedule'>
        <ScheduleInfo 
-        src={calendar}
-        alt='calendar icon'
-        copy='Nov 04 - Dec 16 (Mon, Wed), 13:00 - 16:00'
-       />
-        <ScheduleInfo 
-        src={location}
-        alt='location icon'
-        copy='Downtown DTC Rm. 484'
-       />
-       <ScheduleInfo 
-        src={calendar}
-        alt='calendar icon'
-        copy='Nov 04 - Dec 16 (asynchronous labs)'
-       />
-        <ScheduleInfo 
-        src={location}
-        alt='location icon'
-        copy='Online'
+        meetingMetrics={offeringDetails.meeting_metrics}
        />
       </div>
       <div className={isLinkClicked ? 'offering-details__container' : 'hidden'}>
@@ -71,12 +54,15 @@ const CourseOffering = ({offeringDetails}) => {
           </div>
         </div>
       <div className={isLinkClicked && offeringDetails.status === 'Available' ? 'crn-section__status--available' : 'crn-section__status' }>
-        <div></div>
         {
           isLinkClicked 
-          ? (offeringDetails.status === 'Available' 
+          ? (offeringDetails.status.value === 'available' 
               ? <ButtonPrimary handleClick={()=> (console.log('button clicked'))}/> 
-              : <p className='offering-details__subscribe'>This course is full. Please check this page for other currently available offerings, subscribe to receive email updates or contact us with your comments or questions.</p>)
+              : <div className='offering-details__subscribe'>
+                  <div>{`This course is ${offeringDetails.status.name.toLowerCase()}. Please check this page for other currently available offerings, `}</div>
+                  <TextLink text='subscribe' />
+                  <div>{` to receive email updates or `}  <TextLink text='contact us' /> {`with your comments or questions.`}</div>
+                </div>)
           : <TextLink 
           text="View details"
           handleClick={()=>setIsLinkClicked(!isLinkClicked)}
