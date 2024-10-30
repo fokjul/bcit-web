@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bcit-web/static/css/main.ac3da0e0.css",
-    "main.js": "/bcit-web/static/js/main.e114883e.js",
+    "main.css": "/bcit-web/static/css/main.6817244b.css",
+    "main.js": "/bcit-web/static/js/main.5b82fdf5.js",
     "static/media/fa-solid-900.ttf": "/bcit-web/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-brands-400.ttf": "/bcit-web/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/fa-solid-900.woff2": "/bcit-web/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
@@ -29,11 +29,11 @@
     "static/media/twitter.svg": "/bcit-web/static/media/twitter.9cf2331492128b0863cb4bfb6edf378b.svg",
     "static/media/arrow-forwardBlue.svg": "/bcit-web/static/media/arrow-forwardBlue.aa9998d8e0aec5c60360fcc41aa54931.svg",
     "static/media/arrow-forward.svg": "/bcit-web/static/media/arrow-forward.1005fceff38ec931c4be06637d58f7b3.svg",
-    "main.ac3da0e0.css.map": "/bcit-web/static/css/main.ac3da0e0.css.map",
-    "main.e114883e.js.map": "/bcit-web/static/js/main.e114883e.js.map"
+    "main.6817244b.css.map": "/bcit-web/static/css/main.6817244b.css.map",
+    "main.5b82fdf5.js.map": "/bcit-web/static/js/main.5b82fdf5.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac3da0e0.css",
-    "static/js/main.e114883e.js"
+    "static/css/main.6817244b.css",
+    "static/js/main.5b82fdf5.js"
   ]
 }
