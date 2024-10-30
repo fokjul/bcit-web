@@ -8,6 +8,7 @@ import PageHeader from "./components/Molecules/PageHeader/PageHeader";
 import SideBar from "./components/Molecules/SideBar/SideBar";
 import UtilMenuBar from "./components/Molecules/UtilMenuBar/UtilMenuBar";
 import AccordionList from "./components/Molecules/AccordionList/AccordionList";
+import Footer from './components/Molecules/Footer/Footer'
 import { useEffect, useState } from "react";
 
 const App = () => {
@@ -54,6 +55,7 @@ const App = () => {
           <CourseOfferingList courseDetails={courseDetails} />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
