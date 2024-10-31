@@ -17,7 +17,8 @@ const App = () => {
 
   const getCourseDetails = async () => {
     try {
-      const response = await axios.get("https://bcit-web-server-69pgxku5g-fokjuls-projects.vercel.app/courses");
+      const response = await axios.get("https://bcit-web-server.vercel.app/courses");
+      console.log("Full response:", response.data);
       if (!response.data.course) {
         console.log("Data is not available");
       }
