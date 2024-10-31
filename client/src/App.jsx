@@ -11,12 +11,13 @@ import AccordionList from "./components/Molecules/AccordionList/AccordionList";
 import Footer from './components/Molecules/Footer/Footer'
 import { useEffect, useState } from "react";
 
+
 const App = () => {
   const [courseDetails, setCourseDetails] = useState({});
 
   const getCourseDetails = async () => {
     try {
-      const response = await axios.get("https://bcit-web-server.onrender.com/courses");
+      const response = await axios.get("https://bcit-web-server-69pgxku5g-fokjuls-projects.vercel.app/courses");
       if (!response.data.course) {
         console.log("Data is not available");
       }
