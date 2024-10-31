@@ -16,7 +16,7 @@ const App = () => {
 
   const getCourseDetails = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/courses");
+      const response = await axios.get("https://bcit-web-server.onrender.com/courses");
       if (!response.data.course) {
         console.log("Data is not available");
       }
