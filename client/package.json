@@ -2,7 +2,7 @@
   "name": "bcit-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fokjul.github.io/bcit-web",
+  "homepage": ".",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
