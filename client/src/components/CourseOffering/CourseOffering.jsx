@@ -28,15 +28,23 @@ const CourseOffering = ({offeringDetails}) => {
               />
             </div>
             </div>
-            <StatusTag 
-              status={offeringDetails.status}
-            />
+            <div className='crn-section__status-tag'>
+              <StatusTag 
+                status={offeringDetails.status}
+              />
+            </div>
+            
           </div>
 
           <div className='crn-section__cost'>
               <h4 className='crn-section__crn-header'>{`$${offeringDetails.domestic_fee}`}</h4>
               <span className='crn-section__caption'>Domestic fee</span>
           </div>
+          <div className='crn-section__status-tag--mobile'>
+              <StatusTag 
+                status={offeringDetails.status}
+              />
+            </div>
       </div>
       <div className='crn-section__schedule'>
        <ScheduleInfo 

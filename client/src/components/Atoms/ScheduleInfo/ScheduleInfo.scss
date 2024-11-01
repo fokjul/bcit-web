@@ -1,28 +1,10 @@
 @use '../../../styles/partials/' as p;
 
-// .schedule-info {
-//     display: flex;
-//     gap: p.$size-xxs;
-//     padding-block: p.$size-xs;
-//     align-items: start;
-
-//     &:nth-child(even) {
-//         border-bottom: 1px solid p.$border-global-grey;
-//         margin-bottom: p.$size-s;
-//     }
-
-//     @include p.breakpoint(tablet) {
-//         border-bottom: 1px solid p.$border-global-grey;
-//         align-items: center;
-        
-//         &:nth-child(even) {
-//             margin-bottom: 0;
-//         }
-//     }
-// }
-
 .meetingMetrics {
-    display: flex;
+    display: none;
+
+    @include p.breakpoint(tablet) {
+        display: flex;
     flex-direction: column;
     gap: p.$size-s;
 
@@ -47,5 +29,32 @@
         width: 100%;
 
     }
-    
+    }
+
+    &--mobile {
+        display: flex;
+        flex-direction: column;
+        gap: p.$size-l;
+
+        @include p.breakpoint(tablet) {
+            display: none;
+        }
+
+        .meetingMetrics__row {
+            display: flex;
+            flex-direction: column;
+            gap: p.$size-xs;
+            border-bottom: 1px solid p.$border-global-grey;
+            padding-bottom: p.$size-s;
+        }
+    }
+
+    &__metric {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header-cell {
+        font-weight: p.$font-bold;
+    }
 }
