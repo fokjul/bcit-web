@@ -11,11 +11,18 @@
     padding-block: p.px-to-rem(38);
     
     @include p.breakpoint(tablet) {
-        @include p.container-layout;
         width: 100%;
-        flex-direction: row;
         align-items: flex-start;
         padding-top: 0;
+        padding-inline: p.$size-xl;
+        border-bottom: 1px solid p.$border-global-grey;
+    }
+
+    @include p.breakpoint(desktop) {
+        @include p.container-layout;
+        align-items: flex-start;
+        flex-direction: row;
+        
     }
 
     
@@ -27,8 +34,12 @@
 
         @include p.breakpoint(tablet) {
             padding-block: p.$size-3xl;
-            padding-left: p.$size-xl;
+            padding-inline: 0;
             border-bottom: none;
+        }
+
+        @include p.breakpoint(desktop) {
+            padding-left: p.$size-xl;
         }
     }
 }

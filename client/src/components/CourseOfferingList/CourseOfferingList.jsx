@@ -9,6 +9,12 @@ const CourseOfferingList = ({courseDetails}) => {
   const [tabClicked, setTabClicked] = useState({ id: termArray[0] || '', isClicked: true });
   const [currentOfferings, setCurrentOfferings] = useState([]);
   const offeringDetails = courseDetails.offerings;
+  const [isViewDetailsClicked, setIsViewDetailsClicked] = useState({
+    id: '',
+    isClicked: false
+  })
+
+  console.log(isViewDetailsClicked)
 
   useEffect(() => {
     if (termArray.length > 0 && !tabClicked.id) {
@@ -32,14 +38,19 @@ const CourseOfferingList = ({courseDetails}) => {
         terms={termArray}
         tabClicked={tabClicked}
         setTabClicked={setTabClicked}
+        setIsViewDetailsClicked={setIsViewDetailsClicked}
+        currentOfferings={currentOfferings}
+        courseDetails={courseDetails}
       />
 
       <div className='offerings__list'>
-          <p>{`Below are ${currentOfferings?.length} offerings of ${courseDetails?.crn} for the ${currentOfferings[0]?.term} term.`}</p>
           {currentOfferings.map((offering, index) => {
             return <CourseOffering
               key={index}
               offeringDetails={offering}
+              isLinkClicked={isViewDetailsClicked} 
+              setIsLinkClicked={setIsViewDetailsClicked}
+              courseDetails={courseDetails}
             />
           })}
         </div>

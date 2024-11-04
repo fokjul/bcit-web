@@ -7,8 +7,11 @@
     gap: p.$size-s;
     padding-top: p.$size-l;
 
-
     @include p.breakpoint(tablet) {
+        padding-inline: 0;
+    }
+
+    @include p.breakpoint(desktop) {
         padding-top: p.$size-3xl;
         padding-right: p.$size-l;
         padding-left: 0;
