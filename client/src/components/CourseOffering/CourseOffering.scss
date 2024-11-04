@@ -10,7 +10,7 @@
     margin-inline: auto;
 
     @include p.breakpoint(tablet) {
-        gap: p.$size-m;
+        gap: p.$size-l;
     }
 
 
@@ -27,11 +27,12 @@
 
         &-container {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
             gap: p.$size-xs;
 
             @include p.breakpoint(tablet) { 
-                flex-direction: row;
+                justify-content: flex-start;
             }
         }
     }
@@ -112,19 +113,19 @@
         }
     }
 
-    &__status-tag {
-        display: none;
+    // &__status-tag {
+    //     display: ;
         
-        @include p.breakpoint(tablet) {
-            display: block;
-        }
-    }
+    //     @include p.breakpoint(tablet) {
+    //         display: block;
+    //     }
+    // }
 
-    &__status-tag--mobile {
-        @include p.breakpoint(tablet) {
-            display: none;
-        }
-    }
+    // &__status-tag--mobile {
+    //     @include p.breakpoint(tablet) {
+    //         display: none;
+    //     }
+    // }
 }
 
 .offering-details {
@@ -148,14 +149,24 @@
         justify-content: flex-end;
     }
 
-    &__heading {
-        color: p.$secondaryColor--fontGrey;
+    &__item {
+
+        &-heading {
+            color: p.$secondaryColor--fontGrey;
+        }
+        
+        &-copy {
+            @extend .body-copy;
+        }
+
     }
 
     &__info {
         padding-top: p.$size-m;
         border-top: 1px solid p.$border-global-grey
     }
+
+
 
     &__subscribe {
         display: flex;

@@ -5,30 +5,33 @@
 
     @include p.breakpoint(tablet) {
         display: flex;
-    flex-direction: column;
-    gap: p.$size-s;
+        flex-direction: column;
+        gap: p.$size-s;
 
-    &__header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        border-bottom: 1px solid p.$border-dark-grey;
-        width: 100%;
+        &__header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border-bottom: 1px solid p.$border-dark-grey;
+            width: 100%;
 
-        &-cell {
-            font-weight: 700;
-            background-color: p.$background-grey;
-            padding-block: p.$size-xs;
+            &-cell {
+                font-weight: 700;
+                background-color: p.$background-grey;
+                padding-block: p.$size-xs;
+            }
         }
-    }
 
-    &__row {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        border-bottom: 1px solid p.$border-dark-grey;
-        padding-block: p.$size-xxs;
-        width: 100%;
+        &__row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border-bottom: 1px solid p.$border-dark-grey;
+            padding-block: p.$size-xxs;
+            width: 100%;
+        }
 
-    }
+        &__cell {
+            font-size: p.px-to-rem(18);
+        }
     }
 
     &--mobile {
