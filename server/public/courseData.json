@@ -52,8 +52,8 @@
               "meeting_metrics": [
                 {
                   "dates": "Sep 09 - Dec 07",
-                  "days": "Async",
-                  "times": "Async",
+                  "days": "N/A",
+                  "times": "N/A",
                   "locations": "Online"
                 },
                 {
@@ -374,8 +374,8 @@
               "meeting_metrics": [
                 {
                   "dates": "Jan 06 - Apr 05",
-                  "days": "Asynchronous",
-                  "times": "Asynchronous",
+                  "days": "N/A",
+                  "times": "N/A",
                   "locations": "Online"
                 },
                 {
