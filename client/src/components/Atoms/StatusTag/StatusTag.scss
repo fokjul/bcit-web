@@ -10,14 +10,17 @@
 
     &--available {
         background-color: rgba(0, 159, 61, 0.1);
+        display: inline-block;
     }
 
     &--full {
         background-color: rgba(204, 0, 0, 0.1);
+        display: inline-block;
     }
 
     &--inProgress {
         background-color: rgba(255, 166, 10, 0.1);
+        display: inline-block;
     }
 
     &-text {
@@ -38,37 +41,3 @@
     }
 }
 
-// .statusTag {
-//     display: flex;
-//     align-items: center;
-//     gap: p.$size-xs;
-//     flex-shrink: 0;
-//     border-radius: p.$size-xxs;
-//     padding: p.$size-xxs;
-//     height: fit-content;
-//     width: fit-content;
-
-//     &-text {
-//         @extend .body-copy;
-
-//         &--available {
-//             color: p.$success-color
-//         }
-
-//         &--full {
-//             color: p.$error-color
-//         }
-
-//         &--inProgress {
-//             color: p.$warning-color
-//         }
-//     }
-
-//     &__img-container {
-//         width: p.$size-m;
-
-//         img {
-//             width: 100%;
-//         }
-//     }
-// }
