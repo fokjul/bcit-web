@@ -167,8 +167,15 @@
     &__available {
         width: 100%;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        gap: p.$size-m;
+
+        @include p.breakpoint(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
     }
 }
 
