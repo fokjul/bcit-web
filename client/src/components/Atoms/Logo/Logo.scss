@@ -6,16 +6,16 @@
     display: flex;
     align-items: center;
 
-    @include p.breakpoint(tablet) {
+    @include p.breakpoint(desktop) {
         width: p.px-to-rem(115);
     }
     
     img {
-        width: p.px-to-rem(50);
+        width: p.px-to-rem(44);
         height: p.px-to-rem(54);
 
         @include p.breakpoint(tablet) {
-            width: p.px-to-rem(78);
+            width: p.px-to-rem(65);
             height: p.px-to-rem(74);
         }
         

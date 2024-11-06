@@ -4,9 +4,11 @@
     display: none;
     list-style-type: none;
     width: 100%;
+    padding-left: 0;
 
     @include p.breakpoint(tablet) {
         display: flex;
+        font-size: p.$font-xxs;
     } 
 
     &__item {

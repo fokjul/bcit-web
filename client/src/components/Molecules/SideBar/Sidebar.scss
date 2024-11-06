@@ -6,6 +6,7 @@
     padding-inline: p.$size-s;
     gap: p.$size-s;
     padding-top: p.$size-l;
+    padding-bottom: p.$size-l;
 
     @include p.breakpoint(tablet) {
         padding-inline: 0;

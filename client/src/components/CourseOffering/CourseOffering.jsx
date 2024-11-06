@@ -74,11 +74,14 @@ const CourseOffering = ({offeringDetails, isLinkClicked, setIsLinkClicked, cours
         {
           isLinkClicked.isClicked && isLinkClicked.id === offeringDetails.crn 
           ? (offeringDetails.status.value === 'available' 
-              ? <ButtonPrimary handleClick={()=> (console.log('button clicked'))}/> 
+              ? <div className='offering-details__available'>
+                  <div className='offering-details__subscribe'><StatusTag status={offeringDetails.status}/> {`This course is available`}</div>
+                  <ButtonPrimary handleClick={()=> (console.log('button clicked'))}/>
+                </div> 
               : <div className='offering-details__subscribe'>
-                  <div>{`This course is ${offeringDetails.status.name.toLowerCase()}. Please check this page for other currently available offerings, `}</div>
-                  <TextLink text='subscribe' />
-                  <div>{` to receive email updates or `}  <TextLink text='contact us' /> {`with your comments or questions.`}</div>
+                  <div>
+                    <StatusTag status={offeringDetails.status}/> {`This course is ${offeringDetails.status.name.toLowerCase()}. Please check this page for other currently available offerings, `} <TextLink text='subscribe' /> {` to receive email updates or `}  <TextLink text='contact us' /> {`with your comments or questions.`}
+                  </div>
                 </div>)
           : <TextLink 
           text="View details"
