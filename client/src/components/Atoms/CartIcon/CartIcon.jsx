@@ -3,7 +3,7 @@ import './CartIcon.scss';
 
 const CartIcon = () => {
   return (
-    <span className='cartLabel'>view card</span>
+    <span className='cartLabel'>view cart</span>
   )
 }
 
