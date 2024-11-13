@@ -16,6 +16,7 @@ import info from "./info.svg";
 import twitter from "./twitter.svg";
 import linkedin from "./linkedin.svg";
 import facebook from "./facebook.svg";
+import clock from "./clock.svg";
 
 export {
   calendar,
@@ -36,4 +37,5 @@ export {
   twitter,
   linkedin,
   facebook,
+  clock
 };
