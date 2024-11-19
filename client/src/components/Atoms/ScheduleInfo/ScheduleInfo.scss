@@ -33,6 +33,15 @@
         &__cell {
             font-size: p.px-to-rem(18);
         }
+
+        &__location-container {
+            display: flex;
+            flex-direction: column;
+    
+            button {
+                padding-left: 0;
+            }
+        }
     }
 
     &--mobile {
@@ -62,6 +71,8 @@
     &__header-cell {
         font-weight: p.$font-bold;
     }
+
+
 }
 
 .disabled {

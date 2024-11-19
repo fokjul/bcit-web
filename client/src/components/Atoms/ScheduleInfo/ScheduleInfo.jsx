@@ -20,7 +20,10 @@ const ScheduleInfo = ({ meetingMetrics }) => {
             <div key={index} className='meetingMetrics__cell'>{metricItem.dates}</div>
             <div key={index} className={`meetingMetrics__cell ${metricItem.days === 'N/A' ? 'disabled' : ''}`}>{metricItem.days}</div>
             <div key={index} className={`meetingMetrics__cell ${metricItem.times === 'N/A' ? 'disabled' : ''}`}>{metricItem.times}</div>
-            <TextLink text={metricItem.locations}/>
+            <div className='meetingMetrics__location-container'>
+              <TextLink text={metricItem.locations}/>
+              {metricItem.room ? metricItem.room : ''}
+            </div>
         </div>
         
       ))}
@@ -42,7 +45,10 @@ const ScheduleInfo = ({ meetingMetrics }) => {
             </div>
             <div className='meetingMetrics__metric'>
               <div className='meetingMetrics__header-cell'>Locations</div>
-              <div key={index} className='meetingMetrics__cell'><TextLink text={metricItem.locations}/></div>
+              <div className='meetingMetrics__location-container' key={index}>
+              <TextLink text={metricItem.locations}/>
+              {metricItem.room ? metricItem.room : ''}
+            </div>
             </div>
         </div>
         
