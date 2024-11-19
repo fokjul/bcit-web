@@ -60,13 +60,15 @@
                   "dates": "Oct 26",
                   "days": "Sat",
                   "times": "10:00 - 12:30",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SW01 Rm. 2005"
                 },
                 {
                   "dates": "Dec 07",
                   "days": "Sat",
                   "times": "10:00 - 12:30",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SW01 Rm. 2005"
                 }
               ],
               "instructor": "Tim Edwards",
@@ -96,7 +98,8 @@
                   "dates": "Oct 22",
                   "days": "Tue",
                   "times": "17:30 - 21:30",
-                  "locations": "Downtown"
+                  "locations": "Downtown",
+                  "room": "DTC Rm. 381"
                 },
                 {
                   "dates": "Oct 29 - Nov 26",
@@ -108,7 +111,8 @@
                   "dates": "Dec 03",
                   "days": "Tue",
                   "times": "17:30 - 21:30",
-                  "locations": "Downtown"
+                  "locations": "Downtown",
+                  "room": "DTC Rm. 381"
                 }
               ],
               "instructor": "Mandeep Mann",
@@ -139,7 +143,8 @@
                   "dates": "Oct 23",
                   "days": "Wed",
                   "times": "13:00 - 17:00",
-                  "locations": "Downtown"
+                  "locations": "Downtown",
+                  "room": "DTC Rm. 483"
                 },
                 {
                   "dates": "Oct 30 - Nov 27",
@@ -151,7 +156,8 @@
                   "dates": "Dec 04",
                   "days": "Wed",
                   "times": "13:00 - 17:00",
-                  "locations": "Downtown"
+                  "locations": "Downtown",
+                  "room": "DTC Rm. 483"
                 }
               ],
               "instructor": "Peter Goel",
@@ -176,7 +182,8 @@
                   "dates": "Sep 14 - Dec 07",
                   "days": "Sat",
                   "times": "09:00 - 13:00",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SW03 Rm. 1750"
                 }
               ],
               "instructor": "Barbara Fellnermayr",
@@ -213,7 +220,8 @@
                   "dates": "Nov 09",
                   "days": "Sat",
                   "times": "13:00 - 17:00",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SE06 Rm. 207"
                 },
                 {
                   "dates": "Nov 16 - Nov 23",
@@ -231,7 +239,8 @@
                   "dates": "Nov 30",
                   "days": "Sat",
                   "times": "13:00 - 17:00",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SE06 Rm. 207"
                 }
               ],
               "instructor": "Murray Livergant",
@@ -262,7 +271,8 @@
                   "dates": "Nov 25",
                   "days": "Mon",
                   "times": "18:00 - 22:00",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SE06 Rm. 207"
                 },
                 {
                   "dates": "Nov 28 - Dec 12",
@@ -274,7 +284,8 @@
                   "dates": "Dec 16",
                   "days": "Mon",
                   "times": "18:00 - 22:00",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SE06 Rm. 207"
                 }
               ],
               "instructor": "Murray Livergant",
@@ -304,7 +315,8 @@
                   "dates": "Jan 06 - Apr 07",
                   "days": "Mon",
                   "times": "18:00 - 22:00",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SE06 Rm. 205"
                 }
               ],
               "instructor": "Barbara Fellnermayr",
@@ -334,13 +346,15 @@
                   "dates": "Feb 24",
                   "days": "Mon",
                   "times": "17:30 - 21:30",
-                  "locations": "Downtown"
+                  "locations": "Downtown",
+                  "room": "DTC Rm. 470"
                 },
                 {
                   "dates": "Mar 03",
                   "days": "Mon",
                   "times": "17:30 - 21:30",
-                  "locations": "Downtown"
+                  "locations": "Downtown",
+                  "room": "DTC Rm. 470"
                 },
                 {
                   "dates": "Mar 10 - Mar 31",
@@ -352,7 +366,8 @@
                   "dates": "Apr 07",
                   "days": "Mon",
                   "times": "17:30 - 21:30",
-                  "locations": "Downtown"
+                  "locations": "Downtown",
+                  "room": "DTC Rm. 470"
                 }
               ],
               "instructor": "Gary Nitikman",
@@ -382,13 +397,15 @@
                   "dates": "Feb 22",
                   "days": "Sat",
                   "times": "10:00 - 12:30",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SE06 Rm. 204"
                 },
                 {
                   "dates": "Apr 05",
                   "days": "Sat",
                   "times": "10:00 - 12:30",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SE06 Rm. 204"
                 }
               ],
               "instructor": "Tim Edwards",
@@ -412,7 +429,8 @@
                   "dates": "Jan 08 - Apr 02",
                   "days": "Wed",
                   "times": "13:00 - 17:00",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "NE01 Rm. 404"
                 }
               ],
               "instructor": "Randy Robinson",
@@ -436,7 +454,8 @@
                   "dates": "Jan 11 - Apr 05",
                   "days": "Sat",
                   "times": "09:00 - 13:00",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SW01 Rm. 2004"
                 }
               ],
               "instructor": "Gary Nitikman",
@@ -472,7 +491,8 @@
                   "dates": "Mar 08",
                   "days": "Sat",
                   "times": "13:00 - 17:00",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SE06 Rm. 204"
                 },
                 {
                   "dates": "Mar 15 - Mar 22",
@@ -490,7 +510,8 @@
                   "dates": "Mar 29",
                   "days": "Sat",
                   "times": "13:00 - 17:00",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SE06 Rm. 204"
                 }
               ],
               "instructor": "Murray Livergant",
@@ -520,7 +541,8 @@
                   "dates": "Mar 17",
                   "days": "Mon",
                   "times": "18:00 - 22:00",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SE06 Rm. 204"
                 },
                 {
                   "dates": "Mar 20 - Apr 03",
@@ -532,7 +554,8 @@
                   "dates": "Apr 07",
                   "days": "Mon",
                   "times": "18:00 - 22:00",
-                  "locations": "Burnaby"
+                  "locations": "Burnaby",
+                  "room": "SE06 Rm. 204"
                 }
               ],
               "instructor": "Murray Livergant",
