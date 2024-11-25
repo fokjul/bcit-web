@@ -71,11 +71,13 @@
 
     &__cost {
         display: flex;
-        flex-direction: column;
-        gap: p.px-to-rem(2);
+        gap: p.$size-xs;
+        align-items: center;
 
         @include p.breakpoint(tablet) {
+            flex-direction: column;
             align-items: flex-end;
+            gap: p.px-to-rem(2);
         }
     }
 
