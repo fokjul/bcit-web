@@ -36,7 +36,7 @@ const CourseOffering = ({offeringDetails, isLinkClicked, setIsLinkClicked, cours
           </div>
           <div className='crn-section__cost'>
               <h4 className='crn-section__crn-header'>{`$${offeringDetails.domestic_fee}`}</h4>
-              <span className='crn-section__caption'>Domestic fee</span>
+              <span className='crn-section__caption'>Domestic fees</span>
           </div>
       </div>
       <div className='crn-section__schedule'>
